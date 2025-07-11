@@ -18,7 +18,7 @@ Current benchmark:
 |---|---|---|
 P5 Amazon-Beauty|Recall@10|0.42
 
-# Planned Roadmap (EN)
+# Planned Roadmap
 ## TODO
 - **Add More Model:** HSTU, LCRec, Cobra, OneRec, etc.
 - **Test More Dataset:** Test on more datasets.
