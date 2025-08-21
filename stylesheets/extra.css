@@ -1,0 +1,69 @@
+/* Custom styles for GenerativeRecommenders documentation */
+
+:root {
+  --md-primary-fg-color:        #673ab7;
+  --md-primary-fg-color--light: #9c27b0;
+  --md-primary-fg-color--dark:  #512da8;
+}
+
+/* Code block styling */
+.highlight .hll {
+  background-color: #ffffcc;
+}
+
+/* Admonition styling */
+.md-typeset .admonition {
+  border-left: 0.2rem solid #448aff;
+}
+
+/* Table styling */
+.md-typeset table:not([class]) {
+  border: 0.05rem solid var(--md-typeset-table-color);
+  border-radius: 0.1rem;
+}
+
+/* Navigation styling */
+.md-nav__title[for="__drawer"] {
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+}
+
+/* Language selector */
+.md-header__option {
+  color: var(--md-primary-bg-color);
+}
+
+/* Code annotation styling */
+.md-typeset .tabbed-set {
+  border-radius: 0.1rem;
+}
+
+/* Mermaid diagrams */
+.mermaid {
+  text-align: center;
+}
+
+/* Custom info boxes */
+.info-box {
+  background-color: #e3f2fd;
+  border-left: 4px solid #2196f3;
+  padding: 12px;
+  margin: 16px 0;
+  border-radius: 4px;
+}
+
+.warning-box {
+  background-color: #fff3e0;
+  border-left: 4px solid #ff9800;
+  padding: 12px;
+  margin: 16px 0;
+  border-radius: 4px;
+}
+
+.success-box {
+  background-color: #e8f5e8;
+  border-left: 4px solid #4caf50;
+  padding: 12px;
+  margin: 16px 0;
+  border-radius: 4px;
+}
