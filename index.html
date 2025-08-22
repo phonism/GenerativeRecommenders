@@ -12,24 +12,26 @@
         <meta name="author" content="Research Team">
       
       
-        <link rel="canonical" href="https://phonism.github.io/GenerativeRecommenders/en/api/">
+        <link rel="canonical" href="https://phonism.github.io/GenerativeRecommenders/">
       
       
       
+        <link rel="next" href="zh/getting-started/">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      
+      <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
     
     
       
-        <title>API Reference - GenerativeRecommenders</title>
+        <title>GenerativeRecommenders</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,11 +50,11 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#api-reference" class="md-skip">
+        <a href="#generativerecommenders" class="md-skip">
           跳转至
         </a>
       
@@ -94,7 +96,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../.." title="GenerativeRecommenders" class="md-header__button md-logo" aria-label="GenerativeRecommenders" data-md-component="logo">
+    <a href="." title="GenerativeRecommenders" class="md-header__button md-logo" aria-label="GenerativeRecommenders" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API Reference
+              首页
             
           </span>
         </div>
@@ -161,13 +163,13 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="./" hreflang="zh" class="md-select__link">
+            <a href="." hreflang="zh" class="md-select__link">
               {'name': '中文', 'build': True}
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../" hreflang="en" class="md-select__link">
+            <a href="en/" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -261,7 +263,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="GenerativeRecommenders" class="md-nav__button md-logo" aria-label="GenerativeRecommenders" data-md-component="logo">
+    <a href="." title="GenerativeRecommenders" class="md-nav__button md-logo" aria-label="GenerativeRecommenders" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -288,10 +290,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
         
   
   
@@ -302,6 +326,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      特性
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      快速开始
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="快速开始">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      简单示例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      架构概览
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心组件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      贡献
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      许可证
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -313,7 +435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zh/getting-started/" class="md-nav__link">
+      <a href="zh/getting-started/" class="md-nav__link">
         
   
   
@@ -335,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zh/installation/" class="md-nav__link">
+      <a href="zh/installation/" class="md-nav__link">
         
   
   
@@ -402,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zh/models/rqvae/" class="md-nav__link">
+      <a href="zh/models/rqvae/" class="md-nav__link">
         
   
   
@@ -425,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zh/models/tiger/" class="md-nav__link">
+      <a href="zh/models/tiger/" class="md-nav__link">
         
   
   
@@ -500,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zh/dataset/overview/" class="md-nav__link">
+      <a href="zh/dataset/overview/" class="md-nav__link">
         
   
   
@@ -523,7 +645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zh/dataset/p5-amazon/" class="md-nav__link">
+      <a href="zh/dataset/p5-amazon/" class="md-nav__link">
         
   
   
@@ -546,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zh/dataset/custom/" class="md-nav__link">
+      <a href="zh/dataset/custom/" class="md-nav__link">
         
   
   
@@ -621,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zh/training/rqvae/" class="md-nav__link">
+      <a href="zh/training/rqvae/" class="md-nav__link">
         
   
   
@@ -644,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zh/training/tiger/" class="md-nav__link">
+      <a href="zh/training/tiger/" class="md-nav__link">
         
   
   
@@ -674,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zh/api/" class="md-nav__link">
+      <a href="zh/api/" class="md-nav__link">
         
   
   
@@ -696,7 +818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zh/examples/" class="md-nav__link">
+      <a href="zh/examples/" class="md-nav__link">
         
   
   
@@ -718,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zh/faq/" class="md-nav__link">
+      <a href="zh/faq/" class="md-nav__link">
         
   
   
@@ -740,7 +862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../zh/contributing/" class="md-nav__link">
+      <a href="zh/contributing/" class="md-nav__link">
         
   
   
@@ -782,37 +904,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#core-modules" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Core Modules
+      特性
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Core Modules">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      快速开始
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="快速开始">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#models" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Models
+      安装
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#data-processing" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      Data Processing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#training" class="md-nav__link">
-    <span class="md-ellipsis">
-      Training
+      简单示例
     </span>
   </a>
   
@@ -824,35 +946,38 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-navigation" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      Quick Navigation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Quick Navigation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#core-components" class="md-nav__link">
-    <span class="md-ellipsis">
-      Core Components
+      架构概览
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#code-examples" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      Code Examples
+      核心组件
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      贡献
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      许可证
+    </span>
+  </a>
   
 </li>
       
@@ -875,40 +1000,57 @@
   
 
 
-<h1 id="api-reference">API Reference<a class="headerlink" href="#api-reference" title="Permanent link">&para;</a></h1>
-<p>This section provides detailed API documentation for the GenerativeRecommenders framework.</p>
-<h2 id="core-modules">Core Modules<a class="headerlink" href="#core-modules" title="Permanent link">&para;</a></h2>
-<h3 id="models">Models<a class="headerlink" href="#models" title="Permanent link">&para;</a></h3>
+<h1 id="generativerecommenders">GenerativeRecommenders<a class="headerlink" href="#generativerecommenders" title="Permanent link">&para;</a></h1>
+<p>基于 PyTorch 的生成式推荐系统研究框架。</p>
+<h2 id="_1">特性<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong><a href="rqvae/">RQVAE</a></strong>: Residual Quantized Variational Autoencoder</li>
-<li><strong><a href="tiger/">TIGER</a></strong>: Transformer-based generative retrieval model</li>
+<li>🚀 <strong>现代架构</strong>: 基于 Transformer 和变分自编码器的生成式推荐</li>
+<li>📊 <strong>丰富数据集</strong>: 支持 P5 Amazon 等主流推荐数据集</li>
+<li>🔧 <strong>易于扩展</strong>: 模块化设计，支持自定义数据集和模型</li>
+<li>🎯 <strong>端到端</strong>: 从数据预处理到模型训练的完整流程</li>
+<li>📈 <strong>高性能</strong>: 优化的训练流程和推理性能</li>
 </ul>
-<h3 id="data-processing">Data Processing<a class="headerlink" href="#data-processing" title="Permanent link">&para;</a></h3>
+<h2 id="_2">快速开始<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">安装<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/phonism/GenerativeRecommenders.git
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>GenerativeRecommenders
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+</span></code></pre></div>
+<h3 id="_4">简单示例<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">generative_recommenders.data</span><span class="w"> </span><span class="kn">import</span> <span class="n">P5AmazonItemDataset</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">generative_recommenders.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">RqVae</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># 加载数据集</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">dataset</span> <span class="o">=</span> <span class="n">P5AmazonItemDataset</span><span class="p">(</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">root</span><span class="o">=</span><span class="s2">&quot;data/amazon&quot;</span><span class="p">,</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">split</span><span class="o">=</span><span class="s2">&quot;beauty&quot;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">)</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># 训练 RQVAE 模型</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">model</span> <span class="o">=</span> <span class="n">RqVae</span><span class="p">(</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="n">vocab_size</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">),</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="n">embedding_dim</span><span class="o">=</span><span class="mi">256</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="p">)</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="c1"># 开始训练...</span>
+</span></code></pre></div>
+<h2 id="_5">架构概览<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>GenerativeRecommenders 包含两个核心模型：</p>
+<ol>
+<li><strong>RQVAE (Residual Quantized VAE)</strong>: 学习物品的向量量化表示</li>
+<li><strong>TIGER (Transformer-based Generative Retrieval)</strong>: 基于用户历史序列生成推荐</li>
+</ol>
+<h2 id="_6">核心组件<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong><a href="base-dataset/">Base Dataset</a></strong>: Abstract base classes for datasets</li>
-<li><strong><a href="configs/">Configurations</a></strong>: Configuration management classes</li>
-<li><strong><a href="processors/">Processors</a></strong>: Text and sequence processing utilities</li>
-<li><strong><a href="dataset-factory/">Dataset Factory</a></strong>: Factory pattern for dataset creation</li>
+<li><strong>数据处理</strong>: 支持多种推荐数据集格式</li>
+<li><strong>模型架构</strong>: RQVAE + TIGER 双阶段训练</li>
+<li><strong>训练框架</strong>: 基于 PyTorch Lightning 的现代化训练</li>
+<li><strong>配置管理</strong>: 灵活的 Gin 配置系统</li>
 </ul>
-<h3 id="training">Training<a class="headerlink" href="#training" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong><a href="trainers/">Trainers</a></strong>: Training utilities and scripts</li>
-<li><strong><a href="modules/">Modules</a></strong>: Core building blocks (encoders, losses, metrics)</li>
-</ul>
-<h2 id="quick-navigation">Quick Navigation<a class="headerlink" href="#quick-navigation" title="Permanent link">&para;</a></h2>
-<h3 id="core-components">Core Components<a class="headerlink" href="#core-components" title="Permanent link">&para;</a></h3>
-<p><strong>Models:</strong>
-- <a href="../models/rqvae/">RQVAE Model Class</a> - Vector quantized variational autoencoder
-- <a href="../models/tiger/">TIGER Model Class</a> - Transformer-based generative retrieval</p>
-<p><strong>Data Processing:</strong>
-- <a href="../dataset/overview/">Dataset Classes</a> - Data loading and preprocessing
-- <a href="../dataset/overview/">Configuration System</a> - Parameter management
-- <a href="../dataset/overview/">Processors</a> - Text and sequence processing utilities</p>
-<p><strong>Training:</strong>
-- <a href="../training/rqvae/">RQVAE Training</a> - Training procedures and configuration
-- <a href="../training/tiger/">TIGER Training</a> - Advanced training workflows</p>
-<h3 id="code-examples">Code Examples<a class="headerlink" href="#code-examples" title="Permanent link">&para;</a></h3>
-<p>See the <a href="../examples/">Examples</a> page for practical usage patterns and code snippets.</p>
+<h2 id="_7">贡献<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>我们欢迎社区贡献！请查看<a href="zh/contributing/">贡献指南</a>了解详情。</p>
+<h2 id="_8">许可证<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>本项目采用 MIT 许可证 - 查看 <a href="https://github.com/phonism/GenerativeRecommenders/blob/main/LICENSE">LICENSE</a> 文件了解详情。</p>
 
 
 
@@ -973,12 +1115,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="assets/javascripts/bundle.92b07e13.min.js"></script>
       
-        <script src="../../javascripts/mathjax.js"></script>
+        <script src="javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

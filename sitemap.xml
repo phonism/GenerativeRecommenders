@@ -1,195 +1,199 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+         <loc>https://phonism.github.io/GenerativeRecommenders/</loc>
+         <lastmod>2025-08-22</lastmod>
+    </url>
+    <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/contributing/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/deployment/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/examples/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/faq/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/getting-started/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/installation/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/api/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/api/base-dataset/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/api/configs/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/api/dataset-factory/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/api/datasets/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/api/modules/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/api/processors/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/api/rqvae/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/api/tiger/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/api/trainers/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/dataset/custom/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/dataset/overview/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/dataset/p5-amazon/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/models/rqvae/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/models/tiger/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/training/rqvae/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/en/training/tiger/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/contributing/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/deployment/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/examples/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/faq/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/getting-started/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/installation/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/api/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/api/base-dataset/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/api/configs/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/api/dataset-factory/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/api/datasets/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/api/modules/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/api/processors/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/api/rqvae/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/api/tiger/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/api/trainers/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/dataset/custom/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/dataset/overview/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/dataset/p5-amazon/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/models/rqvae/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/models/tiger/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/training/rqvae/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
     <url>
          <loc>https://phonism.github.io/GenerativeRecommenders/zh/training/tiger/</loc>
-         <lastmod>2025-08-21</lastmod>
+         <lastmod>2025-08-22</lastmod>
     </url>
 </urlset>

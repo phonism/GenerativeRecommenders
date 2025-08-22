@@ -92,7 +92,7 @@
 
   
 
-<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="GenerativeRecommenders" class="md-header__button md-logo" aria-label="GenerativeRecommenders" data-md-component="logo">
       
@@ -168,7 +168,7 @@
         
           <li class="md-select__item">
             <a href="./" hreflang="en" class="md-select__link">
-              {'name': 'English', 'build': True, 'nav_translations': {'首页': 'Home', '快速开始': 'Getting Started', '安装指南': 'Installation', '模型': 'Models', '数据集': 'Dataset', '概述': 'Overview', '自定义数据集': 'Custom Datasets', '训练': 'Training', 'API 参考': 'API Reference', '示例': 'Examples', '常见问题': 'FAQ', '贡献指南': 'Contributing'}}
+              {'name': 'English', 'build': True, 'nav_translations': {'首页': 'Home', '快速开始': 'Getting Started', '安装指南': 'Installation', '模型': 'Models', '数据集': 'Dataset', '概述': 'Overview', '自定义数据集': 'Custom Datasets', '训练': 'Training', 'RQVAE 训练': 'RQVAE Training', 'TIGER 训练': 'TIGER Training', 'API 参考': 'API Reference', '示例': 'Examples', '常见问题': 'FAQ', '贡献指南': 'Contributing'}}
             </a>
           </li>
         
@@ -238,215 +238,13 @@
     
   </nav>
   
-    
-      
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../zh/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  首页 ({'name': '中文', 'build': True})
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../zh/getting-started/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  快速开始 ({'name': '中文', 'build': True})
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../zh/installation/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  安装指南 ({'name': '中文', 'build': True})
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../zh/models/rqvae/" class="md-tabs__link">
-          
-  
-  
-  模型
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../zh/dataset/overview/" class="md-tabs__link">
-          
-  
-  
-  数据集
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../zh/training/rqvae/" class="md-tabs__link">
-          
-  
-  
-  训练
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../zh/api/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  API 参考 ({'name': '中文', 'build': True})
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../zh/examples/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  示例 ({'name': '中文', 'build': True})
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../zh/faq/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  常见问题 ({'name': '中文', 'build': True})
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../zh/contributing/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  贡献指南 ({'name': '中文', 'build': True})
-
-      </a>
-    </li>
-  
-
-      
-    </ul>
-  </div>
-</nav>
-    
-  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -460,10 +258,8 @@
                     
 
 
-  
 
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="GenerativeRecommenders" class="md-nav__button md-logo" aria-label="GenerativeRecommenders" data-md-component="logo">
       
@@ -495,7 +291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../zh/" class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -565,12 +361,12 @@
     
     
       
-      
+        
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -579,7 +375,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -663,12 +459,12 @@
     
     
       
-      
+        
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -677,7 +473,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -784,12 +580,12 @@
     
     
       
-      
+        
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -798,7 +594,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -1325,7 +1121,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
