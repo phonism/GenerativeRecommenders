@@ -154,14 +154,12 @@ class Tiger(nn.Module):
 
         pos = torch.arange(N, device=item_emb.device).unsqueeze(0)
         pos_emb = self.pos_embedding(pos.long())
-        #encoder_input = torch.cat([user_emb, item_emb + pos_emb], dim=1)
-        encoder_input = torch.cat([user_emb, item_emb], dim=1)
+        encoder_input = torch.cat([user_emb, item_emb + pos_emb], dim=1)
 
         if target_input_ids is not None:
             target_emb = self.sem_id_embedding(target_input_ids, target_token_type_ids)
             decoder_pos_emb = self.decoder_pos_embedding(target_token_type_ids)
-            #decoder_input = torch.cat([self.bos_embedding.repeat(B, 1, 1), target_emb + decoder_pos_emb], dim=1)
-            decoder_input = torch.cat([self.bos_embedding.repeat(B, 1, 1), target_emb], dim=1)
+            decoder_input = torch.cat([self.bos_embedding.repeat(B, 1, 1), target_emb + decoder_pos_emb], dim=1)
         else:
             decoder_input = self.bos_embedding.repeat(B, 1, 1)
 
@@ -215,12 +213,22 @@ class Tiger(nn.Module):
         """
 
         if target_input_ids is not None and target_input_ids.shape[1] == self.sem_id_dim:
-            loss = F.cross_entropy(
-                loss_logits.reshape(-1, loss_logits.size(-1)),
-                target_input_ids.reshape(-1),
-                reduction="none"
-            ).reshape(B, -1)
-            loss = loss.sum(dim=1).mean()
+            # Flatten for loss computation
+            flat_logits = loss_logits.reshape(-1, loss_logits.size(-1))
+            flat_targets = target_input_ids.reshape(-1)
+            
+            # Create mask to ignore pad tokens (pad_id = num_item_embeddings * sem_id_dim)
+            pad_id = self.num_item_embeddings * self.sem_id_dim
+            valid_mask = (flat_targets < self.num_item_embeddings) & (flat_targets >= 0)
+            
+            if valid_mask.any():
+                loss = F.cross_entropy(
+                    flat_logits[valid_mask],
+                    flat_targets[valid_mask],
+                    reduction="mean"
+                )
+            else:
+                loss = torch.tensor(0.0, device=flat_logits.device, requires_grad=True)
         else:
             loss = None
         return TigerOutput(
@@ -254,6 +262,8 @@ class Tiger(nn.Module):
         """
         Generate
         """
+        # Ensure model is in eval mode during generation
+        self.eval()
         B, K = user_input_ids.size(0), n_top_k_candidates
         device = user_input_ids.device
 

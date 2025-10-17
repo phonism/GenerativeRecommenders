@@ -8,7 +8,7 @@ import torch
 import wandb
 
 from accelerate import Accelerator
-from generative_recommenders.data.processed import PrefetchDataset
+# from generative_recommenders.data.processed import PrefetchDataset  # Not used
 from generative_recommenders.data.utils import cycle
 from generative_recommenders.models.tiger import Tiger
 from generative_recommenders.models.rqvae import RqVae
@@ -42,12 +42,15 @@ def pad_collate(
         Dict[str, torch.Tensor]
     """
     max_item_length = max(len(x.item_ids) for x in batch)
+    # Target length should be fixed to sem_id_dim = 3
+    max_target_length = 3
+    
     user_ids = torch.full((len(batch), 1), pad_id, dtype=torch.long, device=device)
     ids = torch.full((len(batch), max_item_length), pad_id, dtype=torch.long, device=device)
     mask = torch.zeros((len(batch), max_item_length), dtype=torch.long, device=device)
     token_type_ids = torch.zeros((len(batch), max_item_length), dtype=torch.long, device=device)
-    target_input_ids = torch.full((len(batch), len(batch[0].target_ids)), pad_id, dtype=torch.long, device=device)
-    target_token_type_ids = torch.zeros((len(batch), len(batch[0].target_ids)), dtype=torch.long, device=device)
+    target_input_ids = torch.full((len(batch), max_target_length), pad_id, dtype=torch.long, device=device)
+    target_token_type_ids = torch.zeros((len(batch), max_target_length), dtype=torch.long, device=device)
 
     B = len(batch)
     for i in range(B):
@@ -59,14 +62,18 @@ def pad_collate(
             ids[i, :len(item_ids)] = torch.tensor(item_ids)
             token_type_ids[i, :len(item_ids)] = torch.arange(len(item_ids), device=ids.device) % 3
             mask[i, :len(item_ids)] = 1
-            target_input_ids[i, :] = torch.tensor(batch[i].target_ids)
-            target_token_type_ids[i, :] = torch.arange(len(batch[i].target_ids), device=target_input_ids.device)
+            target_len = len(batch[i].target_ids)
+            if target_len > 0:
+                target_input_ids[i, :target_len] = torch.tensor(batch[i].target_ids)
+                target_token_type_ids[i, :target_len] = torch.arange(target_len, device=target_input_ids.device)
         else:
             ids[i, max_item_length - len(item_ids):] = torch.tensor(item_ids)
             token_type_ids[i, max_item_length - len(item_ids):] = torch.arange(len(item_ids), device=ids.device) % 3
             mask[i, max_item_length - len(item_ids):] = 1
-            target_input_ids[i, :] = torch.tensor(batch[i].target_ids)
-            target_token_type_ids[i, :] = torch.arange(len(batch[i].target_ids), device=target_input_ids.device)
+            target_len = len(batch[i].target_ids)
+            if target_len > 0:
+                target_input_ids[i, :target_len] = torch.tensor(batch[i].target_ids)
+                target_token_type_ids[i, :target_len] = torch.arange(target_len, device=target_input_ids.device)
 
     return {
         "user_input_ids": user_ids,
