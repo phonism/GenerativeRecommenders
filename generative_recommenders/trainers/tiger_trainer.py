@@ -8,7 +8,6 @@ import torch
 import wandb
 
 from accelerate import Accelerator
-from generative_recommenders.data.processed import PrefetchDataset
 from generative_recommenders.data.utils import cycle
 from generative_recommenders.models.tiger import Tiger
 from generative_recommenders.models.rqvae import RqVae

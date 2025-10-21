@@ -8,7 +8,7 @@ import time
 import wandb
 
 from accelerate import Accelerator
-from generative_recommenders.data.amazon import AmazonReviewsItemDataset
+from generative_recommenders.data.p5_amazon import P5AmazonReviewsItemDataset
 from generative_recommenders.data.utils import cycle
 from generative_recommenders.models.rqvae import RqVae, QuantizeForwardMode
 from generative_recommenders.modules.utils import parse_config
@@ -29,7 +29,7 @@ def train(
     learning_rate=0.0001,
     weight_decay=0.01,
     dataset_folder="dataset/amazon",
-    dataset=AmazonReviewsItemDataset,
+    dataset=P5AmazonReviewsItemDataset,
     pretrained_rqvae_path=None,
     save_dir_root="out/rqvae/amazon/",
     use_kmeans_init=True,
