@@ -18,9 +18,17 @@ Current benchmark:
 |---|---|---|
 P5 Amazon-Beauty|Recall@10|0.42
 
+## Other Models
+We provide early implementations for the following large language model recommenders:
+- [LCRec: Adapting Large Language Models by Integrating Collaborative Semantics for Recommendation](https://arxiv.org/pdf/2311.09049)
+- [NoteLLM: A Retrievable Large Language Model for Note Recommendation](https://arxiv.org/pdf/2403.01744)
+- [COBRA: Sparse Meets Dense: Unified Generative Recommendations with Cascaded Sparse-Dense Representations](https://arxiv.org/pdf/2503.02453)
+
+The training scripts for these models are still being prepared, so they are not ready to run yet.
+
 # Planned Roadmap
 ## TODO
-- **Add More Model:** HSTU, LCRec, Cobra, OneRec, etc.
+- **Add More Model:** HSTU, OneRec, etc.
 - **Test More Dataset:** Test on more datasets.
 
 # References
